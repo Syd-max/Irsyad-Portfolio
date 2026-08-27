@@ -1,0 +1,709 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Irsyad Andika - Portfolio</title>
+  <meta name="description" content="Muhammad Irsyad Andika is an Informatics Engineering student focused on Data Analytics, programming, databases, machine learning, and technology.">
+  <meta property="og:title" content="Muhammad Irsyad Andika - Portfolio">
+  <meta property="og:description" content="Informatics Engineering student with a strong interest in Data Analytics, technology, systems, and computational problem solving.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="YOUR_SITE_URL">
+  <meta name="theme-color" content="#0c0c0f">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor" aria-hidden="true">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+    <span class="cursor-text"></span>
+  </div>
+
+  <!-- Loader -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-bar"></div>
+    <span class="loader-text mono">HOLD ON TIGHT</span>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <a href="#hero" class="nav-brand mono" aria-label="Syad — Go to top">SYAD</a>
+    <div class="nav-links" id="navLinks" role="menubar">
+      <a href="#about" class="nav-link mono" role="menuitem">ABOUT</a>
+      <a href="#skills" class="nav-link mono" role="menuitem">SKILLS</a>
+      <a href="#work" class="nav-link mono" role="menuitem">WORK</a>
+      <a href="#certificates" class="nav-link mono" role="menuitem">CERTS</a>
+      <a href="#contact" class="nav-link mono" role="menuitem">CONTACT</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+  </nav>
+
+  <main class="snap-container">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero section" id="hero">
+      <div class="section-inner">
+        <div class="hero-grid" id="heroGrid" aria-hidden="true"></div>
+        <div class="hero-blocks" id="heroBlocks" aria-hidden="true"></div>
+        <div class="hero-chars" id="heroChars" aria-hidden="true"></div>
+        <!-- Starry Night Sky -->
+        <div class="hero-star-sky" aria-hidden="true">
+          <div class="stars-layer s1"></div>
+          <div class="stars-layer s2"></div>
+          <div class="stars-layer s3"></div>
+        </div>
+
+        <div class="hero-content">
+          <!-- Scene container: badges + monitor all positioned absolutely inside -->
+          <div class="retro-scene" data-animate="zoom-in">
+
+            <!-- ── FLOATING TECH BADGES (scattered, SVG logos only) ── -->
+
+            <!-- Python · top-left -->
+            <div class="tb tb-python">
+              <div class="tb-inner">
+                <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+                  <linearGradient id="pyA" x1="70.252" y1="1237.476" x2="170.659" y2="1151.089" gradientUnits="userSpaceOnUse" gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)">
+                    <stop offset="0" stop-color="#5A9FD4"/><stop offset="1" stop-color="#306998"/>
+                  </linearGradient>
+                  <linearGradient id="pyB" x1="209.474" y1="1098.811" x2="173.62" y2="1149.537" gradientUnits="userSpaceOnUse" gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)">
+                    <stop offset="0" stop-color="#FFD43B"/><stop offset="1" stop-color="#FFE873"/>
+                  </linearGradient>
+                  <path d="M63.391 1.988c-4.222.02-8.252.379-11.8 1.007-10.45 1.846-12.346 5.71-12.346 12.837v9.411h24.693v3.137H29.977c-7.176 0-13.46 4.313-15.426 12.521-2.268 9.405-2.368 15.275 0 25.096 1.755 7.311 5.947 12.519 13.124 12.519h8.491V68.813c0-8.151 7.051-15.34 15.426-15.34h24.665c6.866 0 12.346-5.654 12.346-12.548V15.833c0-6.693-5.646-11.72-12.346-12.837-4.244-.706-8.645-1.027-12.866-1.008zm-13.354 7.569c2.55 0 4.634 2.117 4.634 4.721 0 2.593-2.083 4.69-4.634 4.69-2.56 0-4.633-2.097-4.633-4.69-.001-2.604 2.073-4.721 4.633-4.721z" fill="url(#pyA)"/>
+                  <path d="M91.682 28.38v10.966c0 8.5-7.208 15.655-15.426 15.655H51.591c-6.756 0-12.346 5.783-12.346 12.549v23.515c0 6.691 5.818 10.628 12.346 12.547 7.816 2.297 15.312 2.713 24.665 0 6.216-1.801 12.346-5.423 12.346-12.547v-9.412H63.938v-3.138h37.012c7.176 0 9.852-5.005 12.348-12.519 2.578-7.735 2.467-15.174 0-25.096-1.774-7.145-5.161-12.521-12.348-12.521h-9.268zM77.809 87.927c2.561 0 4.634 2.097 4.634 4.692 0 2.602-2.074 4.719-4.634 4.719-2.55 0-4.633-2.117-4.633-4.719 0-2.595 2.083-4.692 4.633-4.692z" fill="url(#pyB)"/>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Java · left mid -->
+            <div class="tb tb-java">
+              <div class="tb-inner">
+                <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#0074BD" d="M47.617 98.12s-4.767 2.774 3.397 3.71c9.892 1.13 14.947.968 25.845-1.092 0 0 2.871 1.795 6.873 3.351-24.439 10.47-55.308-.607-36.115-5.969z"/>
+                  <path fill="#EA2D2E" d="M44.629 84.455s-5.348 3.959 2.823 4.805c10.567 1.091 18.91 1.18 33.354-1.6 0 0 1.993 2.025 5.132 3.131-29.542 8.64-62.446.68-41.309-6.336z"/>
+                  <path fill="#0074BD" d="M69.865 66.542c6.013 6.92-1.577 13.146-1.577 13.146s15.242-7.866 8.244-17.707c-6.537-9.184-11.556-13.746 15.585-29.48 0 .001-42.575 10.63-22.252 34.041z"/>
+                  <path fill="#0074BD" d="M102.123 108.229s3.529 2.91-3.888 5.159c-14.102 4.272-58.706 5.56-71.094.171-4.451-1.938 3.899-4.625 6.526-5.192 2.739-.593 4.303-.485 4.303-.485-4.953-3.487-32.013 6.85-13.743 9.815 49.821 8.076 90.817-3.637 77.896-9.468z"/>
+                  <path fill="#EA2D2E" d="M49.512 71.811s-22.69 5.389-8.033 7.348c6.19.828 18.518.638 30.011-.326 9.39-.789 18.813-2.474 18.813-2.474s-3.308 1.419-5.704 3.053c-23.042 6.061-67.556 3.238-54.738-2.958 10.832-5.239 19.651-4.643 19.651-4.643z"/>
+                  <path fill="#0074BD" d="M90.891 93.845c23.448-12.19 12.61-23.899 5.036-22.324-1.854.389-2.683.725-2.683.725s.688-1.078 2-1.543c14.953-5.255 26.451 15.503-4.827 23.725 0-.001.36-.326.474-.583z"/>
+                  <path fill="#0074BD" d="M76.917 1.146s12.972 12.976-12.306 32.969c-20.215 15.972-4.612 25.077-.007 35.458-11.802-10.654-20.45-20.035-14.645-28.765 8.526-12.781 32.152-18.98 26.958-39.662z"/>
+                  <path fill="#EA2D2E" d="M55.268 126.082c22.489 1.437 57.03-.8 57.886-11.436 0 0-1.574 4.036-18.597 7.237-19.334 3.605-43.177 3.182-57.309.874 0 .001 2.894 2.395 17.02 3.325z"/>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Power BI · right top -->
+            <div class="tb tb-powerbi">
+              <div class="tb-inner">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                  <rect width="24" height="24" rx="4" fill="#F2C811"/>
+                  <rect x="4" y="12" width="3" height="8" rx="1" fill="#1A1A1A"/>
+                  <rect x="9" y="8"  width="3" height="12" rx="1" fill="#1A1A1A"/>
+                  <rect x="14" y="4" width="3" height="16" rx="1" fill="#1A1A1A"/>
+                  <rect x="19" y="9" width="1" height="11" rx="0.5" fill="#1A1A1A"/>
+                </svg>
+              </div>
+            </div>
+
+            <!-- MySQL · right mid -->
+            <div class="tb tb-mysql">
+              <div class="tb-inner">
+                <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.001 86.873V41.913h7.641l16.615 29.27V41.913h7.24v44.96h-7.641L9.241 57.563v29.31H2.001z" fill="#00758F"/>
+                  <path d="M38.907 86.873V41.913h7.64v44.96h-7.64z" fill="#00758F"/>
+                  <path d="M52.226 86.873l15.612-22.678L53.029 41.913h9.044l8.442 14.409 8.239-14.409h8.64L73.24 63.993l15.613 22.88h-9.244l-9.044-15.412-9.245 15.412h-9.094z" fill="#00758F"/>
+                  <path d="M95.523 86.873V41.913h7.64v38.12h19.815v6.84H95.523z" fill="#F29111"/>
+                  <path d="M124 47.56v-5.648h-4.242v5.648H124zm-4.24 33.873V52.657h4.24v28.776h-4.24z" fill="#F29111"/>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Figma · bottom right -->
+            <div class="tb tb-figma">
+              <div class="tb-inner">
+                <svg viewBox="0 0 38 57" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 28.5a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0z" fill="#1ABCFE"/>
+                  <path d="M0 47.5A9.5 9.5 0 0 1 9.5 38H19v9.5a9.5 9.5 0 0 1-19 0z" fill="#0ACF83"/>
+                  <path d="M19 0v19h9.5a9.5 9.5 0 0 0 0-19H19z" fill="#FF7262"/>
+                  <path d="M0 9.5A9.5 9.5 0 0 0 9.5 19H19V0H9.5A9.5 9.5 0 0 0 0 9.5z" fill="#F24E1E"/>
+                  <path d="M0 28.5A9.5 9.5 0 0 0 9.5 38H19V19H9.5A9.5 9.5 0 0 0 0 28.5z" fill="#A259FF"/>
+                </svg>
+              </div>
+            </div>
+
+            <!-- GitHub · bottom left -->
+            <div class="tb tb-github">
+              <div class="tb-inner">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" fill="#ffffff"/>
+                </svg>
+              </div>
+            </div>
+
+            <!-- ── MONITOR (centered) ── -->
+            <div class="computer-unit">
+              <div class="monitor">
+                <!-- top strip -->
+                <div class="mon-topbar">
+                  <div class="mon-label mono">syad.os · v1.0</div>
+                  <div class="mon-vents">
+                    <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                  </div>
+                  <div class="mon-btns">
+                    <span class="mbtn"></span><span class="mbtn"></span><span class="mbtn"></span>
+                  </div>
+                </div>
+
+                <!-- bezel -->
+                <div class="mon-bezel">
+                  <!-- side stickers -->
+                  <div class="side-stickers left-stickers">
+                    <div class="stk stk-cam"></div>
+                    <div class="stk stk-led"></div>
+                    <div class="stk stk-dot"></div>
+                  </div>
+                  <div class="side-stickers right-stickers">
+                    <div class="stk stk-usb"></div>
+                    <div class="stk stk-pill"></div>
+                  </div>
+
+                  <!-- SCREEN -->
+                  <div class="mon-screen">
+                    <div class="screen-scanlines"></div>
+                    <div class="screen-glare-tl"></div>
+                    <div class="screen-inner">
+                      <div class="crop-mark cm-tl"></div>
+                      <div class="crop-mark cm-tr"></div>
+                      <div class="crop-mark cm-bl"></div>
+                      <div class="crop-mark cm-br"></div>
+                      <div class="hero-overline mono">
+                        <span>DATA</span><span class="hero-sep">·</span><span>SYSTEMS</span><span class="hero-sep">·</span><span>TECHNOLOGY</span>
+                      </div>
+                      <h1 class="hero-title glitch-text" id="heroTitle" data-text="SYAD">SYAD</h1>
+                      <p class="hero-subtitle">I turn messy information<br>into structured decisions.</p>
+                    </div>
+                    <div class="screen-cursor">▌</div>
+                  </div>
+                </div>
+
+                <!-- bottom strip -->
+                <div class="mon-bottombar">
+                  <div class="mon-icons"><span>△</span><span>□</span><span>—</span></div>
+                  <div class="mon-grill2">
+                    <span></span><span></span><span></span><span></span><span></span><span></span>
+                  </div>
+                  <div class="mon-led-dot"></div>
+                </div>
+              </div>
+
+              <!-- stand -->
+              <div class="mon-neck"></div>
+              <div class="mon-foot">
+                <div class="foot-vent">
+                  <span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+            <!-- END SCENE -->
+          </div>
+
+          <div class="hero-cta" data-animate="fade-up">
+            <a href="#work" class="btn btn-primary magnetic" data-cursor="EXPLORE">
+              <span class="btn-text">EXPLORE WORK</span>
+              <span class="btn-arrow" aria-hidden="true">→</span>
+            </a>
+            <a href="assets/certificates/Muhammad_Irsyad_Andika_CV.pdf" class="btn btn-outline magnetic" data-cursor="VIEW CV" target="_blank" rel="noopener noreferrer">
+              <span class="btn-text">RESUME</span>
+            </a>
+            <a href="#contact" class="btn btn-outline magnetic" data-cursor="REACH OUT">
+              <span class="btn-text">CONTACT</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="about section" id="about">
+      <div class="section-inner">
+        <div class="section-header" data-animate="reveal">
+          <span class="section-num mono" aria-hidden="true">01</span>
+          <h2 class="section-title">About</h2>
+          <span class="section-line" aria-hidden="true"></span>
+        </div>
+
+        <div class="about-grid">
+          <!-- Photo Placeholder -->
+          <div class="about-photo-wrapper" data-animate="fade-up">
+            <div class="about-photo magnetic" data-cursor="VIEW">
+              <img src="assets/images/PICT.jpeg" alt="Syad" onerror="this.style.opacity='0'">
+              <div class="photo-fallback mono" aria-hidden="true">
+                <span class="photo-brackets">[</span>
+                <span class="photo-text">IMAGE SPACE</span>
+                <span class="photo-brackets">]</span>
+              </div>
+              <div class="photo-glitch" aria-hidden="true"></div>
+            </div>
+          </div>
+
+          <div class="about-content">
+            <div class="about-text" data-animate="fade-up">
+              <p class="about-lead">
+                I'm an Informatics Engineering student who got really into data, like what happens when you actually look at the numbers instead of guessing.
+              </p>
+              <p>
+                I code, I query databases, I build things from scratch, and I like figuring out what the data is actually trying to say. Currently deep into SQL, Python, machine learning, and cloud infrastructure.
+              </p>
+            </div>
+
+            <div class="about-transform" data-animate="fade-up" aria-label="Data transformation flow: Raw to Process to Pattern to Insight">
+              <div class="transform-step" data-step="1">
+                <span class="transform-label mono">RAW</span>
+                <div class="transform-visual" aria-hidden="true">
+                  <span>x9k</span><span>?2f</span><span>m$7</span>
+                </div>
+              </div>
+              <div class="transform-step" data-step="2">
+                <span class="transform-label mono">PROCESS</span>
+                <div class="transform-visual" aria-hidden="true">
+                  <span>SELECT</span><span>FROM</span><span>GROUP</span>
+                </div>
+              </div>
+              <div class="transform-step" data-step="3">
+                <span class="transform-label mono">INSIGHT</span>
+                <div class="transform-visual transform-visual--final" aria-hidden="true">
+                  <span>✦</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="skills section" id="skills">
+      <div class="section-inner">
+        <div class="section-header" data-animate="reveal">
+          <span class="section-num mono" aria-hidden="true">02</span>
+          <h2 class="section-title">Things I actually work with.</h2>
+          <span class="section-line" aria-hidden="true"></span>
+        </div>
+
+        <div class="skills-container">
+          <div class="skill-group" data-category="data" data-animate="fade-up">
+            <h3 class="skill-group-title mono">DATA</h3>
+            <div class="skill-items">
+              <div class="skill-item" data-skill="data-analysis" tabindex="0"><span class="skill-name">Data Analysis</span><span class="skill-indicator"></span></div>
+              <div class="skill-item" data-skill="sql" tabindex="0"><span class="skill-name">SQL</span><span class="skill-indicator"></span></div>
+              <div class="skill-item" data-skill="mysql" tabindex="0"><span class="skill-name">MySQL</span><span class="skill-indicator"></span></div>
+              <div class="skill-item" data-skill="machine-learning" tabindex="0"><span class="skill-name">Machine Learning</span><span class="skill-indicator"></span></div>
+              <div class="skill-item" data-skill="classification" tabindex="0"><span class="skill-name">Classification</span><span class="skill-indicator"></span></div>
+              <div class="skill-item" data-skill="powerbi" tabindex="0"><span class="skill-name">Power BI</span><span class="skill-indicator"></span></div>
+            </div>
+          </div>
+
+          <div class="skill-group" data-category="programming" data-animate="fade-up">
+            <h3 class="skill-group-title mono">PROGRAMMING</h3>
+            <div class="skill-items">
+              <div class="skill-item" data-skill="python" tabindex="0"><span class="skill-name">Python</span><span class="skill-indicator"></span></div>
+              <div class="skill-item" data-skill="java" tabindex="0"><span class="skill-name">Java</span><span class="skill-indicator"></span></div>
+              <div class="skill-item" data-skill="javascript" tabindex="0"><span class="skill-name">JavaScript</span><span class="skill-indicator"></span></div>
+              <div class="skill-item" data-skill="php" tabindex="0"><span class="skill-name">PHP</span><span class="skill-indicator"></span></div>
+            </div>
+          </div>
+
+          <div class="skill-group" data-category="computational" data-animate="fade-up">
+            <h3 class="skill-group-title mono">COMPUTATIONAL</h3>
+            <div class="skill-items">
+              <div class="skill-item" data-skill="automata" tabindex="0"><span class="skill-name">Automata Theory</span><span class="skill-indicator"></span></div>
+              <div class="skill-item" data-skill="nfa" tabindex="0"><span class="skill-name">NFA / DFA / PDA</span><span class="skill-indicator"></span></div>
+              <div class="skill-item" data-skill="algorithms" tabindex="0"><span class="skill-name">Algorithms</span><span class="skill-indicator"></span></div>
+              <div class="skill-item" data-skill="comp-thinking" tabindex="0"><span class="skill-name">Comp. Thinking</span><span class="skill-indicator"></span></div>
+            </div>
+          </div>
+
+          <div class="skill-group" data-category="tools" data-animate="fade-up">
+            <h3 class="skill-group-title mono">WEB & TOOLS</h3>
+            <div class="skill-items">
+              <div class="skill-item" data-skill="gcloud" tabindex="0"><span class="skill-name">Google Cloud</span><span class="skill-indicator"></span></div>
+              <div class="skill-item" data-skill="apache" tabindex="0"><span class="skill-name">Apache / SSL</span><span class="skill-indicator"></span></div>
+              <div class="skill-item" data-skill="wordpress" tabindex="0"><span class="skill-name">WordPress</span><span class="skill-indicator"></span></div>
+              <div class="skill-item" data-skill="figma" tabindex="0"><span class="skill-name">Figma</span><span class="skill-indicator"></span></div>
+              <div class="skill-item" data-skill="github" tabindex="0"><span class="skill-name">GitHub</span><span class="skill-indicator"></span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-viz-output mono" id="skillViz" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- ===================== WORK (HORIZONTAL CAROUSEL) ===================== -->
+    <section class="work section" id="work">
+      <div class="section-inner">
+        <div class="section-header" data-animate="reveal">
+          <span class="section-num mono" aria-hidden="true">03</span>
+          <h2 class="section-title">Stuff I've built.</h2>
+          <span class="section-line" aria-hidden="true"></span>
+        </div>
+
+        <div class="projects-carousel">
+          
+          <!-- Project 01 -->
+          <article class="project" data-project="data" data-animate="project-enter">
+            <div class="project-info">
+              <span class="project-num mono">01</span>
+              <h3 class="project-title">SQL Data Exploration</h3>
+              <span class="project-cat mono">Data Analysis</span>
+              <div class="project-tech mono">
+                <span>SQL</span><span>MySQL</span><span>Power BI</span>
+              </div>
+              <p class="project-desc">
+                Diving into datasets to find what's actually meaningful. Cleaning, querying, and making sense of raw data.
+                <em class="project-placeholder">[not to mention]</em>
+              </p>
+              <div class="project-links">
+                <a href="#" class="btn-sm magnetic" data-cursor="VIEW"><span>VIEW PROJECT</span><span class="btn-sm-arrow">→</span></a>
+                <a href="https://github.com/Syd-max" class="btn-sm magnetic" data-cursor="CODE"><span>GITHUB</span><span class="btn-sm-arrow">→</span></a>
+              </div>
+            </div>
+            <div class="project-visual" aria-hidden="true">
+              <div class="project-viz project-viz--data">
+                <div class="pv-bar" style="--h:60%"></div>
+                <div class="pv-bar" style="--h:85%"></div>
+                <div class="pv-bar" style="--h:45%"></div>
+                <div class="pv-bar" style="--h:92%"></div>
+                <div class="pv-bar" style="--h:70%"></div>
+                <div class="pv-bar" style="--h:55%"></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 02 -->
+          <article class="project" data-project="ml" data-animate="project-enter">
+            <div class="project-info">
+              <span class="project-num mono">02</span>
+              <h3 class="project-title">Classification Analysis</h3>
+              <span class="project-cat mono">Machine Learning</span>
+              <div class="project-tech mono">
+                <span>Python</span><span>Classification</span><span>Association Rule</span>
+              </div>
+              <p class="project-desc">
+                Exploring machine learning classification techniques to sort and predict patterns in data. Still experimenting, still learning.
+                <em class="project-placeholder">[not to mention]</em>
+              </p>
+              <div class="project-links">
+                <a href="#" class="btn-sm magnetic" data-cursor="VIEW"><span>VIEW PROJECT</span><span class="btn-sm-arrow">→</span></a>
+                <a href="https://github.com/Syd-max" class="btn-sm magnetic" data-cursor="CODE"><span>GITHUB</span><span class="btn-sm-arrow">→</span></a>
+              </div>
+            </div>
+            <div class="project-visual" aria-hidden="true">
+              <div class="project-viz project-viz--ml">
+                <div class="pv-dot" style="--x:20%;--y:30%"></div>
+                <div class="pv-dot" style="--x:25%;--y:40%"></div>
+                <div class="pv-dot" style="--x:18%;--y:35%"></div>
+                <div class="pv-dot pv-dot--b" style="--x:70%;--y:60%"></div>
+                <div class="pv-dot pv-dot--b" style="--x:75%;--y:55%"></div>
+                <div class="pv-dot pv-dot--b" style="--x:72%;--y:65%"></div>
+                <div class="pv-dot pv-dot--c" style="--x:45%;--y:80%"></div>
+                <div class="pv-dot pv-dot--c" style="--x:50%;--y:75%"></div>
+                <div class="pv-dot pv-dot--c" style="--x:48%;--y:85%"></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 03 -->
+          <article class="project" data-project="cloud" data-animate="project-enter">
+            <div class="project-info">
+              <span class="project-num mono">03</span>
+              <h3 class="project-title">Cloud Infrastructure</h3>
+              <span class="project-cat mono">Cloud / Web</span>
+              <div class="project-tech mono">
+                <span>Google Cloud</span><span>Apache</span><span>MariaDB</span><span>PHP</span>
+              </div>
+              <p class="project-desc">
+                Built and deployed a WordPress site on Google Cloud VM using Apache, MariaDB, PHP, and Certbot SSL. The whole stack, from scratch.
+              </p>
+              <div class="project-links">
+                <a href="#" class="btn-sm magnetic" data-cursor="VIEW"><span>VIEW PROJECT</span><span class="btn-sm-arrow">→</span></a>
+                <a href="https://github.com/Syd-max" class="btn-sm magnetic" data-cursor="CODE"><span>GITHUB</span><span class="btn-sm-arrow">→</span></a>
+              </div>
+            </div>
+            <div class="project-visual" aria-hidden="true">
+              <div class="project-viz project-viz--cloud">
+                <div class="pv-node" data-label="CLIENT"><div class="pv-node-inner"></div></div>
+                <div class="pv-conn"></div>
+                <div class="pv-node" data-label="SERVER"><div class="pv-node-inner"></div></div>
+                <div class="pv-conn"></div>
+                <div class="pv-node" data-label="DATABASE"><div class="pv-node-inner"></div></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 04 -->
+          <article class="project" data-project="automata" data-animate="project-enter">
+            <div class="project-info">
+              <span class="project-num mono">04</span>
+              <h3 class="project-title">Computational Systems</h3>
+              <span class="project-cat mono">Computational Theory</span>
+              <div class="project-tech mono">
+                <span>NFA</span><span>DFA</span><span>PDA</span><span>Automata</span>
+              </div>
+              <p class="project-desc">
+                Exploring the fundamentals of computation—the theory behind how machines process information and transition between states.
+                <em class="project-placeholder">[not to mention]</em>
+              </p>
+              <div class="project-links">
+                <a href="#" class="btn-sm magnetic" data-cursor="VIEW"><span>VIEW PROJECT</span><span class="btn-sm-arrow">→</span></a>
+                <a href="https://github.com/Syd-max" class="btn-sm magnetic" data-cursor="CODE"><span>GITHUB</span><span class="btn-sm-arrow">→</span></a>
+              </div>
+            </div>
+            <div class="project-visual" aria-hidden="true">
+              <div class="project-viz project-viz--automata">
+                <div class="pv-state" data-state="q0">q0</div>
+                <div class="pv-trans">→</div>
+                <div class="pv-state" data-state="q1">q1</div>
+                <div class="pv-trans">→</div>
+                <div class="pv-state pv-state--accept" data-state="q2">q2</div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CERTIFICATES ===================== -->
+    <section class="certs section" id="certificates">
+      <div class="section-inner">
+        <div class="section-header" data-animate="reveal">
+          <span class="section-num mono" aria-hidden="true">04</span>
+          <h2 class="section-title">Recognitions.</h2>
+          <span class="section-line" aria-hidden="true"></span>
+        </div>
+
+        <div class="certs-carousel">
+          
+          <!-- Card 1: MS Fabric -->
+          <div class="cert-card" data-tilt data-animate="fade-up">
+            <div class="cert-inner">
+              <div class="cert-front">
+                <div class="cert-badge mono">COMPETENCY</div>
+                <div class="cert-image-placeholder cert-img-microsoft">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft" class="cert-logo-img" loading="lazy">
+                </div>
+                <div class="cert-info">
+                  <h3 class="cert-title">Data Science dengan Microsoft Fabric</h3>
+                  <div class="cert-meta">
+                    <span class="cert-issuer mono">Dicoding x Microsoft</span>
+                    <span class="cert-date mono">Jun 2026</span>
+                  </div>
+                </div>
+                <div class="cert-glare"></div>
+                <div class="cert-holo"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: SQL -->
+          <div class="cert-card" data-tilt data-animate="fade-up">
+            <div class="cert-inner">
+              <div class="cert-front">
+                <div class="cert-badge mono">COMPETENCY</div>
+                <div class="cert-image-placeholder cert-img-dicoding">
+                  <img src="assets/images/logo-dicoding.jpg" alt="Dicoding Academy" class="cert-logo-img" loading="lazy">
+                </div>
+                <div class="cert-info">
+                  <h3 class="cert-title">Dasar Structured Query Language (SQL)</h3>
+                  <div class="cert-meta">
+                    <span class="cert-issuer mono">Dicoding Academy</span>
+                    <span class="cert-date mono">Aug 2026</span>
+                  </div>
+                </div>
+                <div class="cert-glare"></div>
+                <div class="cert-holo"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: RapidMiner -->
+          <div class="cert-card" data-tilt data-animate="fade-up">
+            <div class="cert-inner">
+              <div class="cert-front">
+                <div class="cert-badge mono">WORKSHOP</div>
+                <div class="cert-image-placeholder cert-img-unpam">
+                  <img src="assets/images/logo-unpam.png" alt="Universitas Pamulang" class="cert-logo-img" loading="lazy">
+                </div>
+                <div class="cert-info">
+                  <h3 class="cert-title">Analisis Data dengan RapidMiner</h3>
+                  <div class="cert-meta">
+                    <span class="cert-issuer mono">Universitas Pamulang</span>
+                    <span class="cert-date mono">Jun 2025</span>
+                  </div>
+                </div>
+                <div class="cert-glare"></div>
+                <div class="cert-holo"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: AIESEC -->
+          <div class="cert-card" data-tilt data-animate="fade-up">
+            <div class="cert-inner">
+              <div class="cert-front">
+                <div class="cert-badge mono">LEADERSHIP</div>
+                <div class="cert-image-placeholder cert-img-aiesec">
+                  <img src="assets/images/logo-aiesec.png" alt="AIESEC in Indonesia" class="cert-logo-img" loading="lazy">
+                </div>
+                <div class="cert-info">
+                  <h3 class="cert-title">Future Leaders Delegate</h3>
+                  <div class="cert-meta">
+                    <span class="cert-issuer mono">AIESEC in Indonesia</span>
+                    <span class="cert-date mono">Jan 2025</span>
+                  </div>
+                </div>
+                <div class="cert-glare"></div>
+                <div class="cert-holo"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <p class="certs-caption mono" data-animate="fade-up">Hover to inspect the holographic cards.</p>
+      </div>
+    </section>
+
+    <!-- ===================== CIPHER ===================== -->
+    <section class="cipher section" id="cipher">
+      <div class="section-inner">
+        <div class="section-header" data-animate="reveal">
+          <span class="section-num mono" aria-hidden="true">05</span>
+          <h2 class="section-title">From noise to signal.</h2>
+          <span class="section-line" aria-hidden="true"></span>
+        </div>
+
+        <div class="cipher-machine" id="cipherMachine" data-animate="cipher-activate">
+          <div class="cipher-3d-wrapper" id="cipher3D">
+            
+            <svg class="cipher-svg" viewBox="0 0 600 600" aria-hidden="true">
+              <defs>
+                <path id="cipherPath1" d="M300,50 A250,250 0 1,1 299.999,50"/>
+                <path id="cipherPath2" d="M300,100 A200,200 0 1,1 299.999,100"/>
+                <path id="cipherPath3" d="M300,150 A150,150 0 1,1 299.999,150"/>
+                <path id="cipherPath4" d="M300,200 A100,100 0 1,1 299.999,200"/>
+                <path id="cipherPath5" d="M300,240 A60,60 0 1,1 299.999,240"/>
+                <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="rgba(200, 230, 74, 0.4)"/>
+                  <stop offset="100%" stop-color="transparent"/>
+                </radialGradient>
+              </defs>
+              
+              <g class="cipher-ring-group cipher-ring-group--outer" style="animation-direction: normal; animation-duration: 40s;">
+                <circle cx="300" cy="300" r="250" class="cipher-ring-circle cipher-ring-circle--dashed"/>
+                <text class="cipher-ring-text"><textPath href="#cipherPath1" class="mono">A 7 R 3 X 9 D 1 M 5 Z 8 K 2 P 6 W 4 Q 0 B 3 F 8 L 1 N 7 T 5 · </textPath></text>
+              </g>
+              
+              <g class="cipher-ring-group" style="animation-direction: reverse; animation-duration: 25s;">
+                <circle cx="300" cy="300" r="200" class="cipher-ring-circle"/>
+                <text class="cipher-ring-text"><textPath href="#cipherPath2" class="mono">0 1 1 0 1 0 0 1 ¶ Δ Σ λ ∞ ∝ ∅ ∈ ⊕ ∧ ∨ ¬ ⊂ ⊃ ∩ ∪ ∀ ∃ </textPath></text>
+              </g>
+
+              <g class="cipher-ring-group cipher-ring-group--accent" style="animation-direction: normal; animation-duration: 20s;">
+                <circle cx="300" cy="300" r="150" class="cipher-ring-circle cipher-ring-circle--glow"/>
+                <text class="cipher-ring-text cipher-ring-text--accent"><textPath href="#cipherPath3" class="mono">DATA · QUERY · PATTERN · MODEL · SIGNAL · INSIGHT · </textPath></text>
+              </g>
+
+              <g class="cipher-ring-group" style="animation-direction: reverse; animation-duration: 35s;">
+                <circle cx="300" cy="300" r="100" class="cipher-ring-circle cipher-ring-circle--dashed-dense"/>
+                <text class="cipher-ring-text cipher-ring-text--small"><textPath href="#cipherPath4" class="mono">SELECT * FROM insight WHERE clarity = TRUE </textPath></text>
+              </g>
+
+              <g class="cipher-ring-group cipher-ring-group--inner" style="animation-direction: normal; animation-duration: 15s;">
+                <circle cx="300" cy="300" r="60" class="cipher-ring-circle cipher-ring-circle--glow-strong"/>
+              </g>
+              
+              <g class="cipher-ticks" aria-hidden="true"></g>
+              
+              <!-- Orbital Nodes -->
+              <circle cx="300" cy="300" r="3" class="cipher-node" style="animation: orbitNode 12s linear infinite;" />
+              <circle cx="300" cy="300" r="4" class="cipher-node cipher-node--accent" style="animation: orbitNodeReverse 8s linear infinite;" />
+            </svg>
+
+            <!-- CSS Conic Gradient Radar Sweep -->
+            <div class="cipher-radar-wrapper">
+              <div class="cipher-radar-gradient"></div>
+            </div>
+
+            <!-- Holographic Overlay / Sweep -->
+            <div class="cipher-holo-overlay"></div>
+
+            <div class="cipher-center">
+              <div class="cipher-output mono" id="cipherOutput">
+                 <div class="cipher-glitch-text" id="cipherDecodeText">PROCESSING</div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT & FOOTER ===================== -->
+    <section class="contact section" id="contact">
+      <div class="section-inner contact-inner">
+        
+        <div class="contact-main">
+          <div class="section-header" data-animate="reveal">
+            <span class="section-num mono" aria-hidden="true">06</span>
+            <h2 class="section-title">Let's make something interesting.</h2>
+            <span class="section-line" aria-hidden="true"></span>
+          </div>
+
+          <div class="contact-content" data-animate="fade-up">
+            <p class="contact-lead">
+              Got a project, idea, internship, or just want to chat about data? I'm all ears.
+            </p>
+            <div class="contact-links">
+              <a href="mailto:m.irsyadandika10@gmail.com" class="contact-link magnetic" data-cursor="MAIL">
+                <span class="contact-link-label mono">EMAIL</span>
+                <span class="contact-link-value">m.irsyadandika10@gmail.com</span>
+                <span class="contact-link-arrow" aria-hidden="true">→</span>
+              </a>
+              <a href="https://github.com/Syd-max" class="contact-link magnetic" data-cursor="CODE" target="_blank" rel="noopener noreferrer">
+                <span class="contact-link-label mono">GITHUB</span>
+                <span class="contact-link-value">github.com/Syd-max</span>
+                <span class="contact-link-arrow" aria-hidden="true">→</span>
+              </a>
+              <a href="https://www.linkedin.com/in/irsyad-andika/" class="contact-link magnetic" data-cursor="CONNECT" target="_blank" rel="noopener noreferrer">
+                <span class="contact-link-label mono">LINKEDIN</span>
+                <span class="contact-link-value">linkedin.com/in/irsyad-andika</span>
+                <span class="contact-link-arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <footer class="footer" role="contentinfo">
+          <div class="footer-inner">
+            <span class="footer-brand">SYAD</span>
+            <span class="footer-tagline mono">DATA × SYSTEMS × TECHNOLOGY</span>
+            <span class="footer-year mono">© 2026 Muhammad Irsyad Andika</span>
+          </div>
+        </footer>
+
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
