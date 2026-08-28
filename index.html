@@ -1,18 +1,18 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Muhammad Irsyad Andika - Portfolio</title>
   <meta name="description" content="Muhammad Irsyad Andika is an Informatics Engineering student focused on Data Analytics, programming, databases, machine learning, and technology.">
   <meta property="og:title" content="Muhammad Irsyad Andika - Portfolio">
   <meta property="og:description" content="Informatics Engineering student with a strong interest in Data Analytics, technology, systems, and computational problem solving.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="YOUR_SITE_URL">
-  <meta name="theme-color" content="#0c0c0f">
+  <meta name="theme-color" content="#09183a">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -48,7 +48,7 @@
 
   <main class="snap-container">
 
-    <!-- ===================== HERO ===================== -->
+    <!-- HERO ===================== -->
     <section class="hero section" id="hero">
       <div class="section-inner">
         <div class="hero-grid" id="heroGrid" aria-hidden="true"></div>
@@ -62,10 +62,7 @@
         </div>
 
         <div class="hero-content">
-          <!-- Scene container: badges + monitor all positioned absolutely inside -->
           <div class="retro-scene" data-animate="zoom-in">
-
-            <!-- ── FLOATING TECH BADGES (scattered, SVG logos only) ── -->
 
             <!-- Python · top-left -->
             <div class="tb tb-python">
@@ -230,7 +227,7 @@
       </div>
     </section>
 
-    <!-- ===================== ABOUT ===================== -->
+    <!-- ABOUT ===================== -->
     <section class="about section" id="about">
       <div class="section-inner">
         <div class="section-header" data-animate="reveal">
@@ -240,7 +237,6 @@
         </div>
 
         <div class="about-grid">
-          <!-- Photo Placeholder -->
           <div class="about-photo-wrapper" data-animate="fade-up">
             <div class="about-photo magnetic" data-cursor="VIEW">
               <img src="assets/images/PICT.jpeg" alt="Syad" onerror="this.style.opacity='0'">
@@ -288,7 +284,7 @@
       </div>
     </section>
 
-    <!-- ===================== SKILLS ===================== -->
+    <!-- SKILLS ===================== -->
     <section class="skills section" id="skills">
       <div class="section-inner">
         <div class="section-header" data-animate="reveal">
@@ -346,7 +342,7 @@
       </div>
     </section>
 
-    <!-- ===================== WORK (HORIZONTAL CAROUSEL) ===================== -->
+    <!-- WORK (HORIZONTAL CAROUSEL) ===================== -->
     <section class="work section" id="work">
       <div class="section-inner">
         <div class="section-header" data-animate="reveal">
@@ -388,34 +384,49 @@
           </article>
 
           <!-- Project 02 -->
-          <article class="project" data-project="ml" data-animate="project-enter">
+          <article class="project" data-project="finance" data-animate="project-enter">
             <div class="project-info">
               <span class="project-num mono">02</span>
-              <h3 class="project-title">Classification Analysis</h3>
-              <span class="project-cat mono">Machine Learning</span>
+              <h3 class="project-title">Mode Hemat</h3>
+              <span class="project-cat mono">Web App · Finance</span>
               <div class="project-tech mono">
-                <span>Python</span><span>Classification</span><span>Association Rule</span>
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
               </div>
               <p class="project-desc">
-                Exploring machine learning classification techniques to sort and predict patterns in data. Still experimenting, still learning.
-                <em class="project-placeholder">[not to mention]</em>
+                Platform digital pencatatan keuangan gratis. Bantu pengguna catat pengeluaran, pantau budget, dan bangun kebiasaan finansial yang lebih cerdas.
               </p>
               <div class="project-links">
-                <a href="#" class="btn-sm magnetic" data-cursor="VIEW"><span>VIEW PROJECT</span><span class="btn-sm-arrow">→</span></a>
-                <a href="https://github.com/Syd-max" class="btn-sm magnetic" data-cursor="CODE"><span>GITHUB</span><span class="btn-sm-arrow">→</span></a>
+                <a href="https://syd-max.github.io/mode-hemat-core/" class="btn-sm magnetic" data-cursor="VIEW" target="_blank" rel="noopener noreferrer"><span>VIEW PROJECT</span><span class="btn-sm-arrow">→</span></a>
+                <a href="https://github.com/Syd-max/mode-hemat-core" class="btn-sm magnetic" data-cursor="CODE" target="_blank" rel="noopener noreferrer"><span>GITHUB</span><span class="btn-sm-arrow">→</span></a>
               </div>
             </div>
-            <div class="project-visual" aria-hidden="true">
-              <div class="project-viz project-viz--ml">
-                <div class="pv-dot" style="--x:20%;--y:30%"></div>
-                <div class="pv-dot" style="--x:25%;--y:40%"></div>
-                <div class="pv-dot" style="--x:18%;--y:35%"></div>
-                <div class="pv-dot pv-dot--b" style="--x:70%;--y:60%"></div>
-                <div class="pv-dot pv-dot--b" style="--x:75%;--y:55%"></div>
-                <div class="pv-dot pv-dot--b" style="--x:72%;--y:65%"></div>
-                <div class="pv-dot pv-dot--c" style="--x:45%;--y:80%"></div>
-                <div class="pv-dot pv-dot--c" style="--x:50%;--y:75%"></div>
-                <div class="pv-dot pv-dot--c" style="--x:48%;--y:85%"></div>
+            <div class="project-visual project-visual--finance" aria-hidden="true">
+              <div class="mh-ui">
+                <div class="mh-header">
+                  <span class="mh-label mono">BALANCE</span>
+                  <span class="mh-balance mono">Rp 1.240.000</span>
+                </div>
+                <div class="mh-bars">
+                  <div class="mh-bar-row">
+                    <span class="mh-bar-label mono">FOOD</span>
+                    <div class="mh-bar-track"><div class="mh-bar-fill" style="--w:72%;--c:var(--t-green)"></div></div>
+                    <span class="mh-bar-val mono">72%</span>
+                  </div>
+                  <div class="mh-bar-row">
+                    <span class="mh-bar-label mono">TRANSPORT</span>
+                    <div class="mh-bar-track"><div class="mh-bar-fill" style="--w:45%;--c:var(--t-blue)"></div></div>
+                    <span class="mh-bar-val mono">45%</span>
+                  </div>
+                  <div class="mh-bar-row">
+                    <span class="mh-bar-label mono">SAVINGS</span>
+                    <div class="mh-bar-track"><div class="mh-bar-fill" style="--w:30%;--c:var(--t-purple)"></div></div>
+                    <span class="mh-bar-val mono">30%</span>
+                  </div>
+                </div>
+                <div class="mh-footer">
+                  <span class="mh-tag mono">HEMAT MODE</span>
+                  <span class="mh-dot"></span>
+                </div>
               </div>
             </div>
           </article>
@@ -481,7 +492,7 @@
       </div>
     </section>
 
-    <!-- ===================== CERTIFICATES ===================== -->
+    <!-- CERTIFICATES ===================== -->
     <section class="certs section" id="certificates">
       <div class="section-inner">
         <div class="section-header" data-animate="reveal">
@@ -581,7 +592,7 @@
       </div>
     </section>
 
-    <!-- ===================== CIPHER ===================== -->
+    <!-- CIPHER ===================== -->
     <section class="cipher section" id="cipher">
       <div class="section-inner">
         <div class="section-header" data-animate="reveal">
@@ -656,7 +667,7 @@
       </div>
     </section>
 
-    <!-- ===================== CONTACT & FOOTER ===================== -->
+    <!-- CONTACT & FOOTER ===================== -->
     <section class="contact section" id="contact">
       <div class="section-inner contact-inner">
         
